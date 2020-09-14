@@ -9,4 +9,4 @@ trigger:
 - task: katalonTask@0
   inputs:
     version: '7.6.6'
-    executeArgs: 'katalon -propertiesFile = "C:\Users\Erick\Downloads\CrearTicket\CrearTicket\console.properties" -runMode = console'
+    executeArgs: 'katalonc -noSplash -runMode=console -projectPath="C:\Users\Erick\git\CrearTicket\CrearTicket.prj" -retry=0 -testSuitePath="Test Suites/Suite autoservicio" -executionProfile="default" -browserType="Chrome" -apiKey="6625bef7-97e3-47ee-a6f1-5be454e71eec" --config -proxy.auth.option=NO_PROXY -proxy.system.option=NO_PROXY -proxy.system.applyToDesiredCapabilities=true'
